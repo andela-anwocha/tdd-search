@@ -1,0 +1,9 @@
+<% if @books.any? %>
+  <% @books.each do |book| %>
+    <hr/>
+    <h1><%= book.title %></h1><br/>
+    <%= book.description %>
+  <% end %>
+<% else %>
+  <h3>Book Not Found</h3>
+<% end %>
